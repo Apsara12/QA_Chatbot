@@ -7,10 +7,10 @@ import os
 
 
 def is_valid(email):
-    return re.match(r"[^@]+@[^@]+\.[^@]+", email)
+    return re.match(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", email)
 
 def is_valid_phone(phone):
-    return re.match(r"^\+?[1-9]\d{1,14}$", phone)
+    return re.match(r"^(?:\+977)?9\[78]\d{8}$", phone)
 
 def extract_date(text):
     date = dateparser.parse(text)
@@ -29,10 +29,15 @@ vector_store = create_vector_store(chunks)
 print("Welcome to the Q&A Bot!")
 
 while True:
-    query = input(" You: ")
-    if "call me " in query.lower():
-        name = input("Name: ")
+    query = input(" You: ").strip()
+    if query.lower() in ["exit", "quit"]:
+        print("Thank you for using the Q&A Bot.")
+        break
 
+    if any(phrase in query.lower() for phrase in ["call me", "contact me", "reach me", "get in touch"]):
+        print("Please provide your contact details.")
+        name = input("Name: ")
+        
         while True:
             phone = input("Phone: ")
             if is_valid_phone(phone):
