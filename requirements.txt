@@ -1,8 +1,9 @@
 dotenv
 langchain
-google-generativeai
-langchain-google-genai
+huggingface-hub>=0.30.0
+langchain-huggingface
+sentence-transformers
+transformers
 faiss-cpu
 pypdf
 dateparser
-
