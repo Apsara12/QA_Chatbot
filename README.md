@@ -47,6 +47,9 @@ Used ConversationBufferMemory (deprecated) for simplicity and compatibility with
 ## Installation
 git clone `https://github.com/your-repo/QA_Chatbot.git` Install required Python packages using pip. `pip install -r requirements.txt` Use `.\venv\Scripts\activate` to activate virtual environment. Run `python main.py` to run the chatbot.
 
+## Sample Output
+![Chatbot Output](assets/output1.png)
+
 
 
 
