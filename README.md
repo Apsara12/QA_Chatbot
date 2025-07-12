@@ -45,7 +45,7 @@ Only tool_agent.py was used to handle all validation and date extraction with @t
 Used ConversationBufferMemory (deprecated) for simplicity and compatibility with LangChain 0.1x.
 
 ## Installation
-git clone `https://github.com/your-repo/QA_Chatbot.git` Install required Python packages using pip. `pip install -r requirements.txt` Use `.\venv\Scripts\activate` to activate virtual environment. Run `python main.py` to run the chatbot.
+git clone `https://github.com/your-repo/QA_Chatbot.git` Install required Python packages using pip. `pip install -r requirements.txt` Use `.\venv\Scripts\activate` to activate virtual environment. This chatbot runs in the terminal. After setup: Run `python main.py` to run the chatbot.
 
 ## Sample Output
 ![Chatbot Output](assets/output1.png)
