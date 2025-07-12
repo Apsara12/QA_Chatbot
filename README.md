@@ -7,12 +7,12 @@ This project is a document-based chatbot built with LangChain. It answers user q
 **Document Q&A**: Ask questions based on uploaded PDF/TXT documents.
 
 **Intent Classification**: Classifies queries into:
-    (qa): document question
-    (appointment): book an appointment
-    (contact): share contact details
+    `qa`: document question
+    `appointment`: book an appointment
+    `contact`: share contact details
     
 **Conversational Forms**:
-    Collects(Name), (Phone), and (Email) if user wants to be contacted.
+    Collects `Name`, `Phone`, and `Email` if user wants to be contacted.
     Books appointments using natural language date input (e.g., "next Monday").
 
 **Date Extraction with Tool Agent**:
@@ -23,8 +23,8 @@ This project is a document-based chatbot built with LangChain. It answers user q
 
 ## Tech Stack
 LangChain
-LLM: Groq with (llama3-8b-8192)
-Embeddings: (all-MiniLM-L6-v2) via langchain_huggingface
+LLM: Groq with `llama3-8b-8192`
+Embeddings: `all-MiniLM-L6-v2` via langchain_huggingface
 Vector Store: FAISS
 Date Parsing: dateparser
 PDF Parsing: pypdf
@@ -45,7 +45,7 @@ Only tool_agent.py was used to handle all validation and date extraction with @t
 Used ConversationBufferMemory (deprecated) for simplicity and compatibility with LangChain 0.1x.
 
 ## Installation
-git clone (https://github.com/your-repo/QA_Chatbot.git) Install required Python packages using pip. (pip install -r requirements.txt) Use (.\venv\Scripts\activate) to activate virtual environment. Run (python main.py) to run the chatbot.
+git clone `https://github.com/your-repo/QA_Chatbot.git` Install required Python packages using pip. `pip install -r requirements.txt` Use `.\venv\Scripts\activate` to activate virtual environment. Run `python main.py` to run the chatbot.
 
 
 
